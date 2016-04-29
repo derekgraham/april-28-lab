@@ -132,9 +132,7 @@ var hello = {
 function SentientBeing(homeplanet, language) {
   this.homePlanet = homeplanet;
   this.homeLanguage = language;
-  function sayHello(){
-    console.log('Hello from ' + this.homePlanet + ' = ' + hello(language));
-  }
+
 }
 
   // TODO: specify a home planet and a language
