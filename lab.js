@@ -132,12 +132,16 @@ var hello = {
 function SentientBeing(homeplanet, language) {
   this.homePlanet = homeplanet;
   this.homeLanguage = language;
+  function sayHello(){
+    console.log('Hello from ' + this.homePlanet + ' = ' + hello(language));
+  }
 }
 
   // TODO: specify a home planet and a language
   // you'll need to add parameters to this constructor
 
 // sb is a SentientBeing object
+//TODO: put this on the SentientBeing prototype
 SentientBeing.prototype.sayHello = function (sb) {
     // TODO: say hello prints out (console.log's) hello in the
     // language of the speaker, but returns it in the language
@@ -149,7 +153,6 @@ SentientBeing.prototype.sayHello = function (sb) {
 
   return(hello[sb.homeLanguage]);
 
-    //TODO: put this on the SentientBeing prototype
 };
 
 // TODO: create three subclasses of SentientBeing, one for each
